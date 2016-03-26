@@ -4,7 +4,28 @@ import ReactDom from 'react-dom';
 var App = React.createClass({
   render() {
     return (
-      <h1>Hello extra file</h1>
+      <div>
+        <InputBox />
+        <OutputBox />
+      </div>
+    );
+  }
+});
+
+var InputBox = React.createClass({
+  render() {
+    return (
+      <div className="input-box">
+        <textarea id="markup-input"></textarea>
+      </div>
+    );
+  }
+});
+
+var OutputBox = React.createClass({
+  render() {
+    return (
+      <div className="output-box" id="markup-output">I am an output box!</div>
     );
   }
 });
