@@ -26,10 +26,13 @@ var App = React.createClass({
   },
   render() {
     return (
-      <div className="app-container">
-        <InputBox changeHandler={this.changeHandler}/>
-        <OutputBox inputedMarkup={this.state.raw_markup}/>
-      </div>
+      <div>
+        <h1 className="title">Github Flavored Markdown Previewer</h1>
+        <div className="app-container">
+          <InputBox changeHandler={this.changeHandler}/>
+          <OutputBox inputedMarkup={this.state.raw_markup}/>
+        </div>
+        </div>
     );
   }
 });
