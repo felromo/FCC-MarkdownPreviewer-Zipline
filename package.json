@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "markdown previwer zipline for freecodecamp",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node ./server.js",
+    "dist": "webpack-dev-server --devtool eval --progress --colors",
+    "deploy": "NODE_ENV=production webpack -p --devtool cheap-module-source-map --progress"
   },
   "author": "tyrantwarship",
   "license": "ISC",
