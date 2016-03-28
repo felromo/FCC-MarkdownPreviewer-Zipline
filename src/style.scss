@@ -1,3 +1,7 @@
+body {
+  background-color: #FFFFFF;
+}
+
 textarea {
   // height: 100vh;
   // width: 50vw;
@@ -6,26 +10,27 @@ textarea {
   border-radius: 5px;
 }
 
-body {
-  background-color: #FFFFFF;
+.title {
+  text-align: center;
+  margin: 20px 0;
 }
 
 .app-container {
   display: flex;
   // flex-direction: column;
-  // justify-content: center;
+  justify-content: center;
 }
 
 .input-box {
   // flex: 1;
-  height: 100vh;
+  height: 80vh;
   width: 45vw;
   padding-right: 10px;
 }
 
 .output-box {
   // flex: 1;
-  height: 100vh;
+  height: 80vh;
   width: 45vw;
   padding-left: 10px;
   background-color: rgba(206, 201, 201, 0.32);
